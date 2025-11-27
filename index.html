@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Grid Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <h1>LAKITELEK.hu</h1>
+        </header>
+        <aside class="sidebar">
+            <h4>Akciós belépő a <br>Hungarikumligetbe</h4>
+            <p>Most csak 11.999 Euró !</p>
+            <img src="hunliget.jpg" width="200px" alt="">
+            <button class="btn">Megrendelem</button>
+        </aside>
+        <main class="main-content">
+            <h1>Lakitelek története</h1>
+            <p>Anonymus, III. Béla királyunk jegyzője Árpád hadai felvonulási területként említi vidékünket. Erre vezethető vissza az a törekvés, hogy a törzsszövetséget vezérlő fejedelem emlékét megörökítsék eleink. Így kapta a Tőserdő melletti terület jó évszázada az Árpádszállás nevet.
+A falu földjét I. Géza királyunk oklevele említi először. A garamszentbenedeki apátság 1075-ben kelt alapító levelében olvashatjuk, hogy itt volt a Tisza partján a királyi ménes itatója, s szőlőskertek is zöldelltek vidékünkön. Ezen oklevél említi az első név szerint ismert lakost, Bocz udvarnokot, aki testvérével az apátság halastavait, s a ménes itatóját őrizte. Az okirat Felsőalpárnak nevezi ezt a földet.
+A Lak elnevezés először 1488-ban fordul elő oklevélben, egy határjárás alkalmával szerepel Alsóalpár, Szentkirály és Szentlőrinc települések neve mellett.</p>
+            <p>Lakitelek főbb arcai:</p>
+            <div class="content-grid">
+                <div class="card"><img src="kz.png" alt="">KZ</div>
+                <div class="card"><img src="kiss.jpeg" alt="">Kiss</div>
+                <div class="card"><img src="image.png" alt="">BB</div>
+            </div>
+        </main>
+        <footer class="footer">&copy; 2025 | Lakitelek <br>Otvos programming KFT </footer>
+    </div>
+    
+    <div class="custom-cursor"></div>
+
+    <script>
+        const cursor = document.querySelector('.custom-cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    </script>
+</body>
+</html>
