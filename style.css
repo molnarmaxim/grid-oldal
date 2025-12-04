@@ -51,6 +51,21 @@ body {
     border-radius: 4px;
 }
 
+.header h1 {
+    margin: 0;
+    font-size: 48px;
+    animation: porgoszoveg 5s linear infinite;
+}
+
+@keyframes porgoszoveg {
+    0% {
+        transform: rotate(0deg);
+        }
+        100% {
+        transform: rotate(360deg);
+        }
+}
+
 .sidebar {
     grid-area: sidebar;
     background-color: #fff;
@@ -112,4 +127,36 @@ body {
     cursor: pointer;
     font-size: 16px;
     margin-top: 15px;
+}
+
+.card:hover {
+    background-color: #218838;
+    animation: getBigger 0.3s ease-in-out;
+
+}
+
+@keyframes getBigger {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button:hover {
+    background-color: #218838;
+    animation: gombanimacio 0.5s linear;
+}
+
+@keyframes gombanimacio {
+    0% {
+        transform: rotateY(0deg);
+        }
+        100% {
+        transform: rotateY(360deg);
+        }
 }
